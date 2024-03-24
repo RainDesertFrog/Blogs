@@ -10,6 +10,35 @@
     margin: 0;
     padding: 0;
   }
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.texto {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.texto:hover {
+  background-color: #f0f0f0;
+}
+
+.imagem {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(10%, 20%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.container:hover .imagem {
+  opacity: 1;
+}
   .menu {
     background-color: #333;
     overflow: hidden;
@@ -40,24 +69,28 @@
   <a href="Arte.html">Artes</a>
 </div>
 
-<div id=Culinária" class="blog-content">
+<div id=Culinária" class="container">
   <h2>Culinária</h2>
-  <p>Um Blog sobre minhas experiencias gastronomicas<br> Neste blog dou minha nota e minha opnião sobre cada prato<br> tentando sempre despertar a vontade de experimentar. </p>
+  <p class="texto">Um Blog sobre minhas experiencias gastronomicas<br> Neste blog dou minha nota e minha opnião sobre cada prato<br> tentando sempre despertar a vontade de experimentar.</p>
+<img src="pão1.png" alt="Imagem" class="imagem">
 </div>
 
-<div id="Moda" class="blog-content">
+<div id="Moda" class="container">
   <h2>Moda</h2>
-  <p>Neste blog eu apresento meus modelos, usando de seus estilos para encantar<br>as pessoas e mostrar para todos sua verdadeira beleza </p>
+  <p class="texto">Neste blog eu apresento meus modelos, usando de seus estilos para encantar<br>as pessoas e mostrar para todos sua verdadeira beleza</p>
+<img src="pão1.png" alt="Imagem" class="imagem">
 </div>
 
-<div id="Banda" class="blog-content">
+<div id="Banda" class="container">
   <h2>Banda</h2>
-  <p>Uma leve descrição sobre nossa banda de Rock Indie, espero que possamos agradar vocês. </p>
+  <p class="texto">Uma leve descrição sobre nossa banda de Rock Indie, espero que possamos agradar vocês.</p>
+<img src="pão1.png" alt="Imagem" class="imagem">
 </div>
 
-<div id="Arte" class="blog-content">
+<div id="Arte" class="container">
   <h2>Arte</h2>
-  <p>Um Blog mostrando algum dos meus desenhos, espero que alguma das minhas artes possa chamar sua atenção </p>
+  <p class="texto">Um Blog mostrando algum dos meus desenhos, espero que alguma das minhas artes possa chamar sua atenção</p>
+<img src="pão1.png" alt="Imagem" class="imagem">
 </div>
 
 </body>

@@ -33,21 +33,22 @@ h2 {
   color: black;
 }
 
-.static-image {
-  position: absolute;
-  top: 20%; 
-  left: 60%:
-  border-radius: 20px;
-  transform: translate(50%, 50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  width: 10wv
-  
-}
-
 .container {
   position: relative;
 }
+
+.static-image {
+  position: fixed;
+  top: 50px; /* Altura desejada do topo */
+  left: 50px; /* Distância desejada da esquerda */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.static-image.active {
+  opacity: 1; 
+}
+  
   .menu {
     background-color: #333;
     overflow: hidden;
